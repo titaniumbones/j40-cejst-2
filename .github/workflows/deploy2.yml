@@ -6,6 +6,7 @@ name: Deploy Gatsby site to Pages
 defaults:
   run:
     working-directory: ./client
+    shell: bash
 on:
   # Runs on pushes targeting the default branch
   push:
@@ -25,11 +26,7 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
-
-# Default to bash
-defaults:
-  run:
-    shell: bash
+shell
 
 jobs:
   # Build job
