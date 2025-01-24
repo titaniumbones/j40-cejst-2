@@ -26,7 +26,6 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
-shell
 
 jobs:
   # Build job
