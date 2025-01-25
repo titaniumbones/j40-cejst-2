@@ -15,5 +15,6 @@ jobs:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           working-dir: ./client
           gatsby-args: --prefix-paths
+          deploy-branch: gh-pages
 # not sure whether access key is working 
 # does the access token have to be in teh repo, or in the environment, or can it be either one?
